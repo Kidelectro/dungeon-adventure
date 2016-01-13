@@ -8,9 +8,13 @@ class TwoRoomCorridor < Room
   def name
     name = "Two Room Corridor"
   end
-#description of your dungeon room
+
   def description
-    description = puts "This looks like a standard dungeon hallway leading off into the " \
+    description = "A long corridor with a room on either side."
+  end
+#description of your dungeon room
+  def enter
+    puts "This looks like a standard dungeon hallway leading off into the " \
     "darkness of beyond, however there is a dim light coming from doorways to the left " \
     "and right."
     if @monster
@@ -18,10 +22,6 @@ class TwoRoomCorridor < Room
     else
       puts "The room is eerily quite."
     end
-  end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
   end
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance

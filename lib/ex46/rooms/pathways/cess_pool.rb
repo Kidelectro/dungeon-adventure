@@ -7,9 +7,13 @@ class CessPool < Room
   def name
     name = "Cess Pool"
   end
-#description of your dungeon room
+
   def description
-    description = "This room opens up into a somewhat large cavernous room that mostly contains "\
+    description = "A room with an inky, smelly, pool of 'water'."
+  end
+#description of your dungeon room
+  def enter
+    puts "This room opens up into a somewhat large cavernous room that mostly contains "\
     "a dark and foul looking body of... something. It most likely used to be water, but the lack "\
     "of a current and the fact that the denezins of this place have used it as a latrine for "\
     "what seems like centuries has turned the body into a foul smelling disease ridden pool."\
@@ -19,10 +23,6 @@ class CessPool < Room
     else
       puts "Except for an occasional bubbling from the pool, the room is eerily quite."
     end
-  end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
   end
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance

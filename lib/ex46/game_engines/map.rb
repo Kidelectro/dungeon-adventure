@@ -13,6 +13,7 @@ class Map
       next_room = @rooms.last
       next_room
     else
+      @room_position = room_position + 1
       next_room
     end
   end
@@ -23,6 +24,7 @@ class Map
       last_room = @rooms.first
       last_room
     else
+      @room_position = room_position - 1
       last_room
     end
   end

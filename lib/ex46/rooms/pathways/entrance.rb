@@ -20,7 +20,7 @@ class Entrance < Room
     else
       puts "The room is eerily quite."
     end
-    player_choice
+    #player_choice
   end
 
   def paths

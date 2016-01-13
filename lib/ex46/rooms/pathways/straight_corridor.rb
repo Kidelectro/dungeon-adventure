@@ -7,20 +7,21 @@ class StraightCorridor < Room
   def name
     name = "Corridor"
   end
-#description of your duneon room
+
   def description
-    description = puts "A long dark and dank hallway. Dimly lit torches line the walls." \
-                        "You can go back or you can continue forward."
+    description = "A long straight corridor"
+  end
+#description of your duneon room
+  def enter
+    puts "A long dark and dank hallway. Dimly lit torches line the walls." \
+    "You can go back or you can continue forward."
     if @monster
       puts "An evil #{@monster.monster} is here blocking your path."
     else
       puts "The room is eerily quite."
     end
   end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
-  end
+
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance
     chance = roll.d100(1)

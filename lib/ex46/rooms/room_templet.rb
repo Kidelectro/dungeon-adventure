@@ -7,8 +7,12 @@ class RoomNameHere < Room
   def name
     name = ""
   end
-#description of your dungeon room
+#brief description of your dungeon room
   def description
+    description = ""
+  end
+#What players see upon entering your room
+  def enter
     description = puts "" \
     if @monster
       puts "An evil #{@monster.monster} is here."
@@ -16,10 +20,7 @@ class RoomNameHere < Room
       puts "The room is eerily quite."
     end
   end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
-  end
+
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance
     chance = roll.d100(1)

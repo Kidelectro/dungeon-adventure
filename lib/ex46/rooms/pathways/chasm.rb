@@ -9,19 +9,19 @@ class Chasm < Room
   end
 #description of your dungeon room
   def description
-    description = puts "A rickety bridge spans a dark seemingly bottomless chasm here. " \
-                       "You can barely make out torches framing the exit of the bridge " \
-                       "on the other side, leading further into the dungeon." \
-                       "Don't look down!"
+    description = "A room with a deep chasm."
+  end
+
+  def enter
+    puts "A rickety bridge spans a dark seemingly bottomless chasm here. " \
+    "You can barely make out torches framing the exit of the bridge " \
+    "on the other side, leading further into the dungeon." \
+    "Don't look down!"
     if @monster
       puts "An evil #{@monster.monster} is here."
     else
       puts "The air whispers with low howls and secrets but is otherwise quite."
     end
-  end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
   end
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance

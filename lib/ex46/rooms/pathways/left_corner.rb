@@ -7,20 +7,20 @@ class LeftCorner < Room
   def name
     name = "Left Corner"
   end
-#description of your dungeon room
+
   def description
-    description = puts "This small room turns to the left as light from the exit glances off " \
+    description = "A room that turns to the left."
+  end
+
+  def enter
+    puts "This small room turns to the left as light from the exit glances off " \
     "the opposite wall. Dirt and grim cover the floor here, but otherwise it is a non-descript " \
-    "portion of the duneon."
+    "portion of the dungeon."
     if @monster
       puts "An evil #{@monster.monster} is here."
     else
       puts "The room is eerily quite."
     end
-  end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
   end
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance

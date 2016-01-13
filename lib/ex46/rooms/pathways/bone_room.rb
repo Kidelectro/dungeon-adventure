@@ -10,7 +10,11 @@ class BoneRoom < Room
   end
 #description of your dungeon room
   def description
-    description = puts "You're feet produce a small crunch as you enter this long rectangular room. Looking " \
+    description = "A room covered in bones."
+  end
+
+  def enter
+    puts "You're feet produce a small crunch as you enter this long rectangular room. Looking " \
     "about you notice the floor is littered with the bones of countless animals, humans, and " \
     "sub-humans. Well worn paths mark where traffic has ground the bones to dust, producing " \
     "the feeling of soft sand as you take each step. Skulls of every sort line the walls on " \
@@ -23,10 +27,7 @@ class BoneRoom < Room
       puts "You hear the chattering of rats as they search for bones to pick clean, but otherwise the room is empty."
     end
   end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
-  end
+
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance
     chance = roll.d100(1)

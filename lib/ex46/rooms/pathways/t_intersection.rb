@@ -7,8 +7,12 @@ class TIntersection < Room
   def name
     name = "Three-way Intersection"
   end
-#description of your duneon room
+
   def description
+    description = "A room that splits in two different directions."
+  end
+#description of your duneon room
+  def enter
     description = "This is a narrow hallway with two exits to the left or right."
     if @monster
       puts "An evil #{@monster.monster} is here."
@@ -16,10 +20,7 @@ class TIntersection < Room
       puts "The room is eerily quite."
     end
   end
-#paths the room has(up, down, north, south etc.)
-  def paths
-    paths = {}
-  end
+
 #If the room has the chance to spawn a monster, this method spawns one
   def monster_chance
     chance = roll.d100(1)
