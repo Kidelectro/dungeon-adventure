@@ -26,12 +26,10 @@ class GameEngine
 
   def player_choice
     print "> "
-    dynamic_player_input
-    #@action = gets.chomp.downcase
+    #dynamic_player_input
+    @action = gets.chomp.downcase
     if @@actions.has_key?(@action)
       puts @@actions[@action]
-    # elsif @action == "look"
-    #   @current_room.enter
     elsif @action == $movement
       puts "You move deeper into the dungeon."
       next_room_position = @map.my_position
@@ -46,12 +44,10 @@ class GameEngine
     end
   end
 
-  def dynamic_player_input
-    player_input = gets.chomp.downcase
-    input_through_lexicon = Lexicon::scan(player_input)
-    @action = Sentence::parse_sentence(input_through_lexicon)
-    #takes player input, puts it through lexicon, makes sentence and returns
-    #it as @action
-  end
+  # def dynamic_player_input
+  #   player_input = gets.chomp.downcase
+  #   input_through_lexicon = Lexicon::scan(player_input)
+  #   @action = Sentence::parse_sentence(input_through_lexicon)
+  # end
 
 end

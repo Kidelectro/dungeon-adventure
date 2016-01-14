@@ -1,0 +1,24 @@
+Dungeon adventure is a text adventure game where you take the role of an adventurer on your
+quest to retrieve the crown of the king from an evil dragon.
+
+This game is still a work in progress.
+
+You can currently move around a small randomly generated dungeon in a linear fashion.
+
+Planned features:
+  -play the game in a web browser.
+  -A character creation system that allows you to pick a class (Warrior, mage, or cleric)
+  -A combat system allowing you to kill monsters
+  -an equipment system, allowing your character to enhance their base abilities. Some creatures
+    will be able to do this too.
+  -more creatures other than rats and skeletons.
+  -The dungeon will have side rooms to explore and will be bigger.
+  -The ability to save progress.
+  -level your character up as they earn experience, and gain new abilities based on your class.
+
+To play the game in a console, from the ex46 directory
+  - $ ruby './bin/loadfiles.rb'
+Or in irb:
+  - irb(main):001:0> load "./bin/loadfiles.rb"
+
+You can type 'directions' to get a small list of directions and how to play the game.
