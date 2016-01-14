@@ -14,6 +14,7 @@ class BoneRoom < Room
   end
 
   def enter
+    $movement = "take pathway"
     puts "You're feet produce a small crunch as you enter this long rectangular room. Looking " \
     "about you notice the floor is littered with the bones of countless animals, humans, and " \
     "sub-humans. Well worn paths mark where traffic has ground the bones to dust, producing " \

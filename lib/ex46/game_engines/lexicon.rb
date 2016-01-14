@@ -1,9 +1,9 @@
-module Lexicon
+class Lexicon
   WORDS = {"directions" => ["north", "south", "east", "west", "down", "up",
-                            "left", "right", "back"],
-          "verbs" => ["go", "stop", "kill", "eat"],
+                            "left", "right", "back", "forward"],
+          "verbs" => ["go", "stop", "kill", "eat", "take", "move", "attack"],
           "stops" => ["the", "in", "of", "from", "at", "it"],
-          "nouns" => ["door", "bear", "princess", "cabinet"]}
+          "nouns" => ["door", "doorway", "bear", "princess", "cabinet", "path", "pathway"]}
 
   def self.scan(input)
     @result = []

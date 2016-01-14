@@ -13,6 +13,7 @@ class Entrance < Room
   end
 
   def enter
+    $movement = "take doorway"
     puts "This is the entrance to the dungeon. It is dark, dirty, and smells of death. " \
     "From here there is a doorway, which takes you deeper into the dungeon."
     if @monster

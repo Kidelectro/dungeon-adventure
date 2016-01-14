@@ -15,7 +15,7 @@ class TwoRoomCorridor < Room
 #description of your dungeon room
   def enter
     puts "This looks like a standard dungeon hallway leading off into the " \
-    "darkness of beyond, however there is a dim light coming from doorways to the left " \
+    "darkness beyond, however there is a dim light coming from doorways to the left " \
     "and right."
     if @monster
       puts "An evil #{@monster.monster} is here."

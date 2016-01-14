@@ -13,10 +13,10 @@ class Chasm < Room
   end
 
   def enter
+    $movement = "cross bridge"
     puts "A rickety bridge spans a dark seemingly bottomless chasm here. " \
     "You can barely make out torches framing the exit of the bridge " \
-    "on the other side, leading further into the dungeon." \
-    "Don't look down!"
+    "on the other side, leading further into the dungeon. Don't look down!"
     if @monster
       puts "An evil #{@monster.monster} is here."
     else

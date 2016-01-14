@@ -13,6 +13,7 @@ class LeftCorner < Room
   end
 
   def enter
+    $movement = "go left"
     puts "This small room turns to the left as light from the exit glances off " \
     "the opposite wall. Dirt and grim cover the floor here, but otherwise it is a non-descript " \
     "portion of the dungeon."

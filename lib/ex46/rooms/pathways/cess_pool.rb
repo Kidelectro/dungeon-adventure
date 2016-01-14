@@ -13,6 +13,7 @@ class CessPool < Room
   end
 #description of your dungeon room
   def enter
+    $movement = "take path"
     puts "This room opens up into a somewhat large cavernous room that mostly contains "\
     "a dark and foul looking body of... something. It most likely used to be water, but the lack "\
     "of a current and the fact that the denezins of this place have used it as a latrine for "\

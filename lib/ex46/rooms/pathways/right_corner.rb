@@ -13,6 +13,7 @@ class RightCorner < Room
   end
 #description of your dungeon room
   def enter
+    $movement = "go right"
     puts "This small room turns to the right as light from the exit glances off " \
     "the opposite wall. Dirt and grim cover the floor here, but otherwise it is a non-descript " \
     "portion of the duneon."
